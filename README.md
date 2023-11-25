@@ -68,6 +68,10 @@ What happens to the above sections if we have to support billions of data ? Our 
 
 We could imagine a more refined cleaning step. We have mainly 2 cases that could be interesting for us.
 * The data we reject from external sources would be interesting to be put against a Machine Learning model that will try to make sense and normalize them. We could use these data as less qualified sources later.
-* The data we reject from in-house sources should be kept in a different place in order to be checked by our QA team since they don't respect our Schema Registry and therefore, we can easily catch breaking changes in our models. 
+* The data we reject from in-house sources should be kept in a different place in order to be checked by our QA team since they don't respect our Schema Registry and therefore, we can easily catch breaking changes in our models.
+
+Our architecture then would look like this : 
+
+![basic_etl_diagram-extra-steps-case.drawio.png](diagrams%2Fbasic_etl_diagram-extra-steps-case.drawio.png)
 
 
